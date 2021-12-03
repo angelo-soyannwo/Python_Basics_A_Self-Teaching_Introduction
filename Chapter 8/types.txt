@@ -1,0 +1,6 @@
+double	int
+long	switch
+enum	typedef
+char	extern	union
+signed 	sizeof	volatile
+const	float	short	unsigned

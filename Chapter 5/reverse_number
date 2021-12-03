@@ -1,0 +1,23 @@
+
+
+def count_digits(x):
+	k = 0
+	copy = x
+	while copy > 0:
+		copy //= 10
+		k += 1
+
+	return k
+
+def reverse_number(a):
+	n = count_digits(a)
+	rev = 0
+	copy = a
+
+	for i in range(n):
+		x = copy % 10
+		rev += x * 10**(n- 1 - i)
+		copy //= 10
+	return rev
+
+print(reverse_number(123455555))

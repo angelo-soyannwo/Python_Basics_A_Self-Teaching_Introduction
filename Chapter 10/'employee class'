@@ -1,0 +1,44 @@
+
+class employee:
+	def getdata(self):
+		self.firstname = input('Enter your first name: ')
+		self.last_name = input('Enter your last name: ')
+		self.address =  input('Enter your address: ')
+		self.mobile =  input('Enter your mobile number: ')
+		self.e_mail =  input('Enter your email address: ') 
+
+
+	def putdata(self):	
+		print(self.firstname)
+		print(self.last_name)
+		print(self.address)
+		print(self.mobile)
+		print(self.email)
+
+
+	def __init__(self):
+		self.firstname = 'Angelo'
+		self.last_name = 'Soyannwo'
+		self.address = 'Room 12, 1 Buswell street, Boston, MA'
+		self.mobile = '+19298883930'
+		self.email = 'seun@bu.edu'
+
+
+	def __init__(self, firstname, lastname, address, mobile, email):	
+		self.firstname = firstname
+		self.last_name = lastname
+		self.address = address
+		self.mobile = mobile
+		self.email = email
+
+	def __del__(self):
+		print('completed')
+
+def main():
+	e = employee('Angelo', 'Soyannwo', 'room 12', '123456789', 'seun@bu.edu')
+	#e.getdata()
+	e.putdata()
+	del e
+
+if __name__ == '__main__':
+	main()

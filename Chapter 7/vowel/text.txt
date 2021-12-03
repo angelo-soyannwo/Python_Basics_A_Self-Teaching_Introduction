@@ -1,0 +1,3 @@
+A Python program accesses data values through references.
+A reference is a name that refers to the specific location in memory of a value (object). References take the form of variables, attributes, and items.
+In Python, a variable or other reference has no intrinsic type. The object to which a reference is bound at a given time does have a type, however. Any given reference may be bound to objects of different types during the execution of a program.

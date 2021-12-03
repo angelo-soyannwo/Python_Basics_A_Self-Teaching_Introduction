@@ -1,0 +1,11 @@
+
+from median import sort
+
+def max_in(array):
+	x = array
+	sort(x)
+	return(x[-1])
+
+print(max_in([10, 2, 4, 5, 6]))
+
+	

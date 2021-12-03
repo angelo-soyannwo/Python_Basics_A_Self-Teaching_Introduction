@@ -1,0 +1,8 @@
+auto	struct
+break	else	switch
+case	register	typedef
+extern	return	union
+continue	for	void
+do	if	static	while
+default	goto	sizeof	volatile
+	

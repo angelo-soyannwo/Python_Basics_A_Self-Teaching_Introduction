@@ -1,0 +1,40 @@
+
+
+
+
+class book:
+	def getdata(self):
+		self.Name = input('Enter your name: ')
+		self.Publisher = input('Enter the puublisher: ')
+		self.Year = input('Enter the year of publication: ')
+		self.ISBN = input('Enter the ISBN of the book: ')
+		self.Authors = input('Enter the Authors of the book')
+
+	def putdata(self):
+		print(self.Name)
+		print(self.Publisher)
+		print(self.Year)
+		print(self.ISBN)
+		print(self.Authors)
+
+	def __init__(self, Name, Publisher, Year, ISBN, Authors):
+		self.Name = Name
+		self.Publisher = Publisher
+		self.Year = Year
+		self.ISBN = ISBN
+		self.Authors = Authors
+
+	def __del__(self):
+		print(self.Name + ' garbage collected')
+
+
+def main():
+	e = book('Angelo', 'Mum and Dad', '2003', '12345678', 'Angelo & God')
+	e.putdata()
+	#e.getdata()
+	del e
+
+if __name__ == '__main__':
+	main()
+
+
