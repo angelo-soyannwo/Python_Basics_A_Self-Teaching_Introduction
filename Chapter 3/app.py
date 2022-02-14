@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__, template_folder="template")
 
 @app.route("/food", methods=["POST"])
-def home():
+def food():
     food = request.form.get('food')
     return render_template("index.html")
     print(food)
